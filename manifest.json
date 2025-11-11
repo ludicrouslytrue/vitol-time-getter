@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Smart Jumper",
+  "name": "Vitol Time Getter",
   "version": "1.0",
-  "description": "Jumps H5P video to the next interaction.",
+  "description": "Jumps vitol's H5P video player to the next interaction/ question.",
   "permissions": [
     "activeTab",
     "scripting"

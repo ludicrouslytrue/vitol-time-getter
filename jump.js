@@ -11,7 +11,7 @@
     navigator.clipboard.writeText(command).then(() => {
       console.log("ok so this is the time where the question is: " + targetTime + " seconds");
       console.log("copied ts to clipboard: " + command);
-      console.log("pls select vido in DevTools inspector and paste in console, and enter thats it");
+      console.log("pls select video in DevTools inspector and paste in console, and enter thats it");
     }).catch(err => {
       console.log("ok so this is the time where the question is: " + targetTime + " seconds");
       console.log("copy ts: " + command);
