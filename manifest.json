@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Smart Jumper",
+  "version": "1.0",
+  "description": "Jumps H5P video to the next interaction.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["jump.js"],
+      "all_frames": true,
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_title": "Jump to Next Question"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [ "injector.js" ],
+      "matches": [ "<all_urls>" ]
+    }
+  ]
+}
